@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+header {
+    color: #0000EE;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(0,0,0, .075);
+    box-shadow: rgb(0 0 0 / 8%) 0 1px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1.3px;
+    margin: 0;
+}
