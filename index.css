@@ -39,6 +39,14 @@ h1 {
     min-height: 110px;
 }
 
+.generator_color_content {
+    display: none;
+}
+.generator_color_content_mobile{
+    margin: 0;
+    padding: 20px
+}
+
 .sub-header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +54,6 @@ h1 {
     align-content: center;
     padding: 0 14px;
     margin-top: 11px;
-
 }
 
 .btn {
@@ -73,4 +80,47 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
     border: none;
     background: blue;
+}
+
+select > option {
+    background: #fff;
+    color: #000;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.purple {
+    background: purple;
+}
+
+@media (min-width: 770px) {
+    /* html, body {
+        height: 100%
+    } */
+
+    #generator_colors {
+        display: flex;
+    }
+
+    .generator_color {
+        width: 100%;
+    }
+
+    .generator_color_bg {
+        height: 100%
+    }
 }
