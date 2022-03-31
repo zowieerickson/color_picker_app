@@ -1,8 +1,18 @@
 const colorInput = document.querySelector("#color-scheme-input")
 const colorSchemeSelect = document.querySelector("#color-scheme")
 const submit = document.querySelector("#generate_submit")
-const redBg = document.querySelector(".generator_color_bg.red")
 const app = document.querySelector("#generator_colors")
+
+app.addEventListener("mouseover", (e) => {
+    let generatorColors = document.querySelectorAll(".generator_color");
+    for (let i = 0; i < generatorColors.length; i++) {
+        generatorColors[i].addEventListener("click", (e) => {
+            console.log(e.target.textContent)
+            navigator.clipboard.writeText(e.target.textContent)
+            })
+    }
+})
+
 
 function renderColorsHtml(data) {
     const colorsArr = data.colors;
@@ -42,3 +52,6 @@ submit.addEventListener("click", () => {
         renderColorsHtml(data)
     })
 })
+
+// navigator.clipboard.readText().then(
+//     clipText => document.querySelector(".generator_color_content").innerText = clipText);

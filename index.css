@@ -31,6 +31,10 @@ h1 {
     margin: 0;
 }
 
+.generator_color {
+    cursor: pointer;
+}
+
 .generator_color_bg {
     background: red;
     border-bottom: 1px solid black;
@@ -60,6 +64,7 @@ h1 {
     color: #000;
     background: #fff;
     box-shadow: inset #d8d8da 0 0 0 1px;
+    cursor: pointer;
     font-weight: 600;
     border-radius: 8px;
     border: none;
@@ -71,6 +76,7 @@ h1 {
 }
 
 .input-btn {
+    cursor: pointer;
     background: #e5e5e5;
     padding: 2px;
     border: 0.5px solid #d1d5db;
