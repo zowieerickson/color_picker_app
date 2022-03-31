@@ -5,14 +5,10 @@ const redBg = document.querySelector(".generator_color_bg.red")
 const app = document.querySelector("#generator_colors")
 
 function renderColorsHtml(data) {
-    console.log(data)
-    console.log(data.colors.length);
     const colorsArr = data.colors;
-    const colorsLength = colorsArr.length;
     let html = ''
 
     for (let color of colorsArr) {
-        console.log(color.hex.value)
         html += `
         <div class="generator_color">
             <div class="generator_color_bg" style="background:${color.hex.value}">
@@ -27,7 +23,7 @@ function renderColorsHtml(data) {
 colorInput.addEventListener("change", watchColorPicker, false)
 
 function watchColorPicker() {
-      let colorHex = colorInput.value;
+      const colorHex = colorInput.value;
       return colorHex;
   }
 
@@ -39,9 +35,6 @@ submit.addEventListener("click", () => {
     const endPoint = '/scheme'
     const query = `?hex=${colorHex}&mode=${colorScheme}`
     const url = `${baseUrl}${endPoint}${query}`
-
-    console.log(watchColorPicker())
-    document.querySelector(".test").innerHTML = watchColorPicker()
 
     fetch(url)
     .then(response => response.json())
