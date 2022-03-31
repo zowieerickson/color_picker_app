@@ -107,6 +107,10 @@ select > option {
     background: purple;
 }
 
+.test {
+    text-align: center;
+}
+
 @media (min-width: 770px) {
 
     #generator_colors {
